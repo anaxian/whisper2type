@@ -1,8 +1,8 @@
 # README for Python Speech Recognition Script
 
 ## Description
-
-This Python script is designed to perform real-time speech recognition. It records audio when the 'shift' key is pressed and stops recording when the 'esc' key is pressed. The recorded audio is then converted into text using the `whisper2basic` module's `speech2` function. The recognized text is then typed out using the `keyboard` module. The script continues to listen for the 'shift' key to start a new recording unless the 'F12' key is pressed to exit the loop[1][2][7].
+Works with Python <=3.11 (Some how doesnot work with Python 3.12)
+This Python script is designed to perform real-time speech recognition. It records audio when the 'shift' key is pressed and stops recording when the 'esc' key is pressed. The recorded audio is then converted into text using the `whisper2basic` module's `speech2` function. The recognized text is then typed out using the `keyboard` module. The script continues to listen for the 'shift' key to start a new recording unless the script is terminated
 
 ## Dependencies
 
@@ -19,8 +19,7 @@ The script requires the following Python packages:
 Please ensure these packages are installed before running the script. You can install them using pip:
 
 ```python
-pip install pyaudio
-pip install keyboard
+pip install -r requirements.txt 
 
 ```
 ffmpeg needs to be installed separately . Follow the instructions from here https://phoenixnap.com/kb/ffmpeg-windows
