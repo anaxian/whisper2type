@@ -2,7 +2,7 @@
 
 ## Description
 Works with Python <=3.11 (Some how doesnot work with Python 3.12)
-This Python script is designed to perform real-time speech recognition. It records audio when the 'shift' key is pressed and stops recording when the 'esc' key is pressed. The recorded audio is then converted into text using the `whisper2basic` module's `speech2` function. The recognized text is then typed out using the `keyboard` module. The script continues to listen for the 'shift' key to start a new recording unless the script is terminated
+This Python script is designed to perform real-time speech recognition. It records audio when the 'shift' key is pressed and stops recording when the 'esc' key is pressed. The recorded audio is then converted into text using the `whisper2text` module's `speech2text` function. The recognized text is then typed out using the `keyboard` module. The script continues to listen for the 'shift' key to start a new recording unless the script is terminated
 
 ## Dependencies
 
@@ -31,7 +31,7 @@ To use the script, simply run it in a Python environment. The script will then w
 
 - The script uses the `pyaudio` module to record audio in real-time[2].
 - The `wave` module is used to save the recorded audio as a .wav file[1].
-- The `whisper2basic` module's `speech2` function is used to convert the recorded audio to text. This module needs to be provided or installed separately.
+- The `whisper2text` module's `speech2text` function is used to convert the recorded audio to text. This module needs to be provided or installed separately.
 - The `keyboard` module is used to wait for key presses and to type out the recognized text
 - The script runs in an infinite loop, constantly listening for the 'shift' key to start a new recording.
 
